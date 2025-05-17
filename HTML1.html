@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Школа японских боевых искусств BUSHIDO - необходимая экипировка для тренировок">
+    <title>BUSHIDO - Экипировка</title>
+    <link rel="preload" href="https://fonts.googleapis.com" as="fetch" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com" as="fetch" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdna.artstation.com/p/assets/images/images/041/264/432/large/alexander-walter-samurai.jpg?1631207045" as="image">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☯</text></svg>">
+    
+    <style>
+        :root {
+            --bg-dark: #121619;
+            --card-bg: #1E262A;
+            --accent-dark: #2D393E;
+            --accent-blue: #4A7A96;
+            --accent-blue-hover: #5D8AA8;
+            --text-light: #F0F5F9;
+            --text-gray: #B8C2C8;
+            --border-color: #2D393E;
+            --highlight: #5E6F70;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--accent-blue);
+            outline-offset: 2px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+                        Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+            font-size: clamp(16px, 2vw, 18px);
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .company-name,
+        .hero-title {
+            font-family: "Shojumaru", "Arial Black", Gadget, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 60vh;
+            min-height: 300px;
+            max-height: 800px;
+            background: linear-gradient(to bottom, rgba(18, 22, 25, 0.7), rgba(18, 22, 25, 0.9)), 
+                        url('https://cdna.artstation.com/p/assets/images/images/041/264/432/large/alexander-walter-samurai.jpg?1631207045') no-repeat center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3rem;
+            background-attachment: fixed;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 1.5rem;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 4vw, 1.8rem);
+            color: var(--text-gray);
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 300;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        header {
+            width: 100%;
+            height: 6vw;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, var(--card-bg) 0%, var(--bg-dark) 100%);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(5px);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            padding: 0 0 0;
+            max-width: 1400px;
+            margin-top: 0;
+        }
+        
+        .nav-button {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-button:hover,
+        .nav-button:focus {
+            color: var(--accent-blue);
+        }
+        
+        .nav-button::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-blue);
+            transition: var(--transition);
+        }
+        
+        .nav-button:hover::after,
+        .nav-button:focus::after {
+            width: 100%;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 3vw;
+        }
+        
+        .nav-button {
+            margin-top: 1vw;
+            margin-right: 5vw;
+            color: #F7EFE2;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: clamp(10px, 2.5vw, 18px);
+            background: none;
+            white-space: nowrap;
+        }
+
+        .company-name {
+            text-decoration: none;
+            font-size: 2rem;
+            color: white;
+            margin-top: 2vw;
+            font-size: clamp(10px, 2.5vw, 18px);
+            margin-right: auto;
+            margin-left: 5%;
+            cursor: default;
+            margin-top: 1vw;
+        }
+
+        .container {
+            flex: 1;
+            padding: 0 1.5rem;
+            margin: 0 auto 3rem;
+            width: 100%;
+            max-width: 1400px;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 100px;
+        }
+
+        .section-title {
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            margin-bottom: 2rem;
+            color: var(--text-light);
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-blue);
+            border-radius: 2px;
+        }
+
+        .history-container {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+            transition: var(--transition);
+        }
+
+        .history-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .history-list {
+            list-style-type: none;
+            display: grid;
+            gap: 2rem;
+        }
+
+        .history-item {
+            padding-left: 2.5rem;
+            position: relative;
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .history-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5em;
+            width: 1.2rem;
+            height: 1.2rem;
+            background-color: var(--accent-blue);
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .condition-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .condition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--accent-blue);
+        }
+
+        .condition-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .condition-title i {
+            color: var(--accent-blue);
+            font-size: 1.8rem;
+            min-width: 2rem;
+        }
+
+        .condition-text {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        .trainers-section {
+            position: relative;
+        }
+
+        .carousel-container {
+            position: relative;
+            margin: 0 -1rem 2rem;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            gap: 1.5rem;
+            padding: 1.5rem 1rem;
+            scrollbar-width: none;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .trainer-card {
+            scroll-snap-align: start;
+            flex: 0 0 85%;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .trainer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .trainer-photo {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .trainer-info {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .trainer-name {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+        }
+
+        .trainer-rank {
+            color: var(--accent-blue);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .carousel-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .carousel-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--accent-blue);
+            color: var(--text-light);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            transition: var(--transition);
+        }
+
+        .carousel-button:hover,
+        .carousel-button:focus {
+            background-color: var(--accent-blue-hover);
+
+        }
+
+        .carousel-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .contacts {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+
+        .contact-title {
+            font-size: clamp(1.5rem, 5vw, 2.2rem);
+            margin-bottom: 2rem;
+            color: var(--text-light);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: var(--transition);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+        }
+
+        .contact-item:hover,
+        .contact-item:focus {
+            color: var(--accent-blue);
+            background-color: rgba(74, 122, 150, 0.1);
+        }
+
+        .contact-item i {
+            font-size: 1.3rem;
+        }
+
+        footer {
+            background-color: #1E262A;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            gap: 2rem;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-link {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-link:hover,
+        .footer-link:focus {
+            color: var(--accent-blue);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-link {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .social-link:hover,
+        .social-link:focus {
+            color: var(--accent-blue);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-blue);
+            color: var(--text-light);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            box-shadow: var(--shadow);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover,
+        .back-to-top:focus {
+            background-color: var(--accent-blue-hover);
+            transform: translateY(-3px);
+        }
+
+       
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .equipment-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .equipment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border-color: var(--accent-blue);
+        }
+
+        .equipment-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .equipment-content {
+            padding: 1.5rem;
+        }
+
+        .equipment-name {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .equipment-name i {
+            color: var(--accent-blue);
+        }
+
+        .equipment-description {
+            color: var(--text-gray);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .equipment-details {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .equipment-detail {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            color: var(--text-gray);
+        }
+
+        .equipment-detail span:first-child {
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        .equipment-important {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        @media (min-width: 481px) {
+
+            .header {
+                width: 100%;
+                height: 8vw;
+            }
+
+            footer {
+                position: static;
+                padding: 1rem 0;
+                background: radial-gradient(circle at bottom, #121619 0%, #1E262A 100% );
+            }
+            
+            .nav-buttons {
+                justify-content: flex-start;
+                gap: 1.5rem;
+                padding: 0 0 0;
+                margin-bottom: auto;
+            }
+            
+            .company-name {
+                display: block;
+                font-size: 1rem;
+                margin-right: auto;
+                padding: 0 1rem;
+            }
+            
+            .nav-button {
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+                flex: initial;
+            }
+            
+            .container {
+                max-width: 1400px;
+                padding: 0 2rem;
+            }
+            
+            .hero-image {
+                height: 65vh;
+                min-height: 350px;
+            }
+            
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .section {
+                margin-bottom: 3rem;
+            }
+            
+            .history-container {
+                padding: 2.5rem;
+                margin-bottom: 3.5rem;
+            }
+            
+            .history-item {
+                font-size: 1.2rem;
+                line-height: 1.8;
+            }
+            
+            .conditions-grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .condition-card {
+                padding: 2rem;
+            }
+            
+            .trainer-card {
+                flex: 0 0 calc(50% - 1.5rem);
+            }
+
+            .equipment-grid {
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .company-name { margin-left: 10%;
+                            text-decoration: none; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-button { margin-right: 2%; 
+                        font-size: clamp(5px, 2vw, 9px);}
+        }
+
+        @media (min-width: 768px) {
+            .hero-image {
+                height: 70vh;
+            }
+            
+            .hero-content {
+                padding: 0 3rem;
+            }
+            
+            .container {
+                padding: 0 3rem;
+            }
+            
+            .history-list {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .history-item {
+                font-size: 1.2rem;
+            }
+            
+            .trainer-card {
+                flex: 0 0 calc(50% - 1.5rem);
+            }
+            
+            .carousel-container {
+                margin: 0 -2rem 2rem;
+            }
+            
+            .carousel {
+                padding: 2rem;
+                gap: 2rem;
+            }
+
+            .equipment-card {
+                display: flex;
+                height: 100%;
+            }
+
+            .equipment-image {
+                width: 40%;
+                height: auto;
+                border-bottom: none;
+                border-right: 1px solid var(--border-color);
+            }
+
+            .equipment-content {
+                width: 60%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-title {
+                font-size: 5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .nav-container {
+                padding: 0 0 0;
+            }
+            
+            .company-name {
+                font-size: 2rem;
+                text-decoration: none;
+                margin-top: 1.5vw;
+            }
+            
+            .nav-button {
+                font-size: 1.2rem;
+                margin-top: 1.5vw;
+            }
+            
+            .history-container {
+                padding: 3rem;
+            }
+            
+            .history-item {
+                font-size: 1.3rem;
+                padding-left: 3rem;
+            }
+            
+            .trainer-card {
+                flex: 0 0 calc(33.333% - 2rem);
+            }
+            
+            .trainer-photo {
+                height: 250px;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(3, 1fr);
+                align-items: center;
+                text-align: left;
+            }
+             .footer-title {
+            margin-left: 50%;
+            margin-right: 50%;
+        }
+            .footer-links,
+            .social-links {
+                justify-content: flex-start;
+                margin-left: 1vw;
+            }
+
+            .equipment-grid {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .hero-image {
+                height: 80vh;
+            }
+            .footer-title {
+            margin-left: 35%;
+            margin-right: 65%;
+        }
+            .trainer-card {
+                flex: 0 0 calc(50% - 2rem);
+            }
+
+            .equipment-grid {
+                grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#" class="company-name">BUSHIDO</a>
+            <nav class="nav-buttons">
+                <a href="HTML.html" class="nav-button">О нас</a>
+                <a href="HTML2.html" class="nav-button">Направления</a>
+                <a href="HTML3.html" class="nav-button">История</a>
+            </nav>
+        </div>
+    </header> 
+    <main class="container">
+        <section class="section" id="kendo-equipment">
+            <h2 class="section-title fade-in">Экипировка для Кендо</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card fade-in delay-1">
+                    <img src="https://sun9-6.userapi.com/impg/R6_hV_7QEWL5yhbG3vwz1BLBoMHsmxeEQPwszw/j5S9a5p5qV8.jpg?size=600x800&quality=95&sign=667b1b6cc7c653b1a75d6ec01cdb9ce1&type=album" 
+                         alt="Богу (доспехи) для кендо" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name">Богу (доспехи)</h3>
+                        <p class="equipment-description">
+                            Защитное снаряжение, состоящее из маски (мен), нагрудника (до), перчаток (котэ) и защиты для бедер (тарэ).
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Материал:</span>
+                                <span>Прочная ткань, бамбук, кожа</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Вес:</span>
+                                <span>5-7 кг</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span class="equipment-important">Да</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in delay-2">
+                    <img src="https://abudomarket.ru/components/com_jshopping/files/img_products/koto-shinai-1.jpg" 
+                         alt="Синай (бамбуковый меч) для кендо" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name">
+                             Синай
+                        </h3>
+                        <p class="equipment-description">
+                            Бамбуковый меч, состоящий из четырех бамбуковых полос, скрепленных кожей. Используется для тренировок и соревнований.
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Длина:</span>
+                                <span>120-122 см (для взрослых)</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Вес:</span>
+                                <span>400-550 г</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span class="equipment-important">Да</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in delay-3">
+                    <img src="https://www.kras-kendo.ru/ui/img/krsk_kendo.jpg" 
+                         alt="Кендоги и хакама" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name"> Кендоги</h3> 
+                        <p class="equipment-description">
+                            Традиционная одежда для кендо: куртка (кендоги) и широкие штаны (хакама). Обычно изготавливаются из хлопка или синтетических материалов.
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Цвет:</span>
+                                <span>Индиго, черный, белый</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Материал:</span>
+                                <span>Хлопок, полиэстер</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span class="equipment-important">Да</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="iaido-equipment">
+            <h2 class="section-title fade-in">Экипировка для Иайдо</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card fade-in delay-1">
+                    <img src="https://i.ebayimg.com/thumbs/images/g/9xIAAOSw0c5nDGJT/s-l1200.jpg" 
+                         alt="Иайто (учебный меч) для иайдо" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name">Иайто</h3>
+                        <p class="equipment-description">
+                            Учебный меч с незаточенным лезвием из цинкового сплава. Используется для тренировок вместо настоящей катаны.
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Длина:</span>
+                                <span>Зависит от роста практикующего</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Вес:</span>
+                                <span>700-1000 г</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span class="equipment-important">Да</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in delay-2">
+                    <img src="https://abudomarket.ru/components/com_jshopping/files/img_products/obi-iaido-cherny.jpg" 
+                         alt="Оби (пояс) для иайдо" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name">Оби</h3>
+                        <p class="equipment-description">
+                            Широкий пояс, который поддерживает ножны меча и фиксирует хакаму. Обычно изготавливается из прочной хлопковой ткани.
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Ширина:</span>
+                                <span>10-15 см</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Длина:</span>
+                                <span>3-4 м</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span class="equipment-important">Да</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in delay-3">
+                    <img src="https://katanafencing.com/images/japanese-fencing-types/japanese-fencing-iaido/japan_fencing_iaido_swordmaster_drawing_sword.jpg" 
+                         alt="Хакама для иайдо" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name"> Хакама</h3>
+                        <p class="equipment-description">
+                            Традиционные японские штаны с широкими складками. В иайдо используются более плотные и тяжелые хакамы, чем в кендо.
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Материал:</span>
+                                <span>Хлопок, полиэстер, твил</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Цвет:</span>
+                                <span>Черный, синий, белый</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span class="equipment-important">Да</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="jodo-equipment">
+            <h2 class="section-title fade-in">Экипировка для Дзёдо</h2>
+            <div class="equipment-grid">
+                <div class="equipment-card fade-in delay-1">
+                    <img src="https://storage.yandexcloud.net/s3-metaratings-storage/upload/iblock/56f/56fc7fe5d0cdeb6f6c009ea08aee90b4.jpg" 
+                         alt="Дзё (палка) для дзёдо" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name"> Дзё</h3>
+                        <p class="equipment-description">
+                            Деревянная палка длиной около 128 см и диаметром 2,4-2,6 см. Изготавливается из прочных пород дерева (дуб, бук, граб).
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Длина:</span>
+                                <span>128 см (стандарт)</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Вес:</span>
+                                <span>450-600 г</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span class="equipment-important">Да</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in delay-2">
+                    <img src="https://forest-home.ru/wa-data/public/shop/products/80/50/25080/images/93530/93530.750x0.jpg" 
+                         alt="Боккэн (деревянный меч) для дзёдо" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name">Боккэн</h3>
+                        <p class="equipment-description">
+                            Деревянный меч, используемый для тренировок. В дзёдо применяется для имитации атак противника.
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Длина:</span>
+                                <span>102 см (стандарт)</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Материал:</span>
+                                <span>Дуб, бук, граб</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span class="equipment-important">Да</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="equipment-card fade-in delay-3">
+                    <img src="https://kendokhv.ru/wp-content/uploads/2022/01/5.jpg" 
+                         alt="Защитное снаряжение для дзёдо" 
+                         class="equipment-image"
+                         loading="lazy">
+                    <div class="equipment-content">
+                        <h3 class="equipment-name">Защитное снаряжение</h3>
+                        <p class="equipment-description">
+                            Включает перчатки (котэ), защиту для запястий и иногда легкий нагрудник. Используется на продвинутых этапах тренировок.
+                        </p>
+                        <div class="equipment-details">
+                            <div class="equipment-detail">
+                                <span>Тип:</span>
+                                <span>Облегченный вариант</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span>Материал:</span>
+                                <span>Кожа, пластик, ткань</span>
+                            </div>
+                            <div class="equipment-detail">
+                                <span class="equipment-important">Обязательно:</span>
+                                <span>Для продвинутых</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="where-to-buy">
+            <h2 class="section-title fade-in">Где приобрести экипировку</h2>
+            <div class="history-container fade-in delay-1">
+                <ul class="history-list">
+                    <li class="history-item">В нашем додзё: Мы сотрудничаем с проверенными поставщиками и можем помочь с подбором и заказом экипировки.</li>
+                    <li class="history-item">Специализированные магазины: В Москве есть несколько магазинов, специализирующихся на японских боевых искусствах.</li>
+                    <li class="history-item">Онлайн-магазины: Мы можем порекомендовать надежные интернет-магазины с доставкой по России.</li>
+                    <li class="history-item">Аренда: Для начинающих доступна аренда базовой экипировки в нашем додзё.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="fade-in delay-3">
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">BUSHIDO</div>
+                <p class="footer-text">Школа японских боевых искусств с 1990 года</p>
+            </div>
+            
+            <div class="footer-contacts">
+                <h3 class="footer-title">Контакты</h3>
+                <div class="contact-info">
+                    <a href="https://wa.me/79999999999" class="contact-item" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> WhatsApp: +7 (999) 999 99-99
+                    </a>
+                    <a href="https://t.me/BUSHIDO_SCHOOL" class="contact-item" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-telegram"></i> Telegram: @BUSHIDO_SCHOOL
+                    </a>
+                    <a href="mailto:info@bushido-school.ru" class="contact-item">
+                        <i class="fas fa-envelope"></i> info@bushido-school.ru
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link" aria-label="VKontakte"><i class="fab fa-vk"></i></a>
+                </div>
+                <p class="copyright">© 2023 BUSHIDO School. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.fade-in');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.2;
+                    
+                    if (elementPosition < screenPosition) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll();
+        });
+    </script>
+</body>
+</html>
